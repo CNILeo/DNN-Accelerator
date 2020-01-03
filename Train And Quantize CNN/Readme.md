@@ -17,7 +17,7 @@
 # Demo说明(Only For Linux X86)
 	这里提供了一个LeNet训练及量化的Demo，使用的是PyTorch的框架。
 	如果没有安装所需要的Packages，可以用pip3 install -r requirements.txt进行安装。
-	文件目录说明	
+### 文件目录说明	
 - Model.py        -- 网络结构的定义
 - Train.py        -- 训练网络
 - Quantization.py -- 感知量化网络
