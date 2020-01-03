@@ -12,7 +12,18 @@
 	1. 正常训练32位浮点模型
 	2. 调用伪量化API继续训练5-10个Epoch
 	3. 量化为8位模型
-# Demo说明
+# 融合操作
+	研究发现，Conv + Relu / Conv + Batnormal + Relu / Conv + Batchnormal / Linear + Relu 可以融合为一个操作（前三者为Conv + BIAS，最后者为Linear + BIAS），通过融合操作可以降低CNN不少的计算量，这里具体的融合代码在Model.py中的fuse函数中。
+# Demo说明(Only For Linux X86)
+	这里提供了一个LeNet训练及量化的Demo，使用的是PyTorch的框架。
+	如果没有安装所需要的Packages，可以用pip3 install -r requirements.txt进行安装。
+	文件目录说明	
+- Model.py        -- 网络结构的定义
+- Train.py        -- 训练网络
+- Quantization.py -- 感知量化网络
+
+# 预告
+	明日更新自己造深度学习推断轮子
 
 # 参考
 [Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference](https://arxiv.org/pdf/1712.05877.pdf)
