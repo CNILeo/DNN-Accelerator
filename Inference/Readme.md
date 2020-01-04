@@ -1,2 +1,5 @@
 # 说明
-这里是自己造深度学习框架轮子的文件夹
+	待更新说明
+	Usage：
+	1. Compile.sh
+	2. Inference Test.png
