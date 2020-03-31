@@ -18,7 +18,7 @@ opt = parser.parse_args()
 
 EPOCH = 8
 BATCH_SIZE = 64
-LR = 0.00
+LR = 0.001
 
 transform = transforms.ToTensor()
 
