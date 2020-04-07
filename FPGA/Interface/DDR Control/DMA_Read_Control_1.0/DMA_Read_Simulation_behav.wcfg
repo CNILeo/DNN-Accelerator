@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="dma_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="axi_dma_pkg" />
+            <top_module name="dma_sim" />
+            <top_module name="glbl" />
+            <top_module name="lib_pkg" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="3060001fs"></ZoomEndTime>
+      <Cursor1Time time="1790000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="215"></NameColumnWidth>
+      <ValueColumnWidth column_width="123"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="34" />
+   <wvobject fp_name="/dma_sim/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/DMA_LENGTH_CONFIG" type="array">
+      <obj_property name="ElementShortName">DMA_LENGTH_CONFIG[25:0]</obj_property>
+      <obj_property name="ObjectShortName">DMA_LENGTH_CONFIG[25:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/DMA_SA_CONFIG" type="array">
+      <obj_property name="ElementShortName">DMA_SA_CONFIG[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DMA_SA_CONFIG[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/DMA_READ_VALID" type="logic">
+      <obj_property name="ElementShortName">DMA_READ_VALID</obj_property>
+      <obj_property name="ObjectShortName">DMA_READ_VALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/DMA_IDLE" type="logic">
+      <obj_property name="ElementShortName">DMA_IDLE</obj_property>
+      <obj_property name="ObjectShortName">DMA_IDLE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/DMA_IRQ" type="logic">
+      <obj_property name="ElementShortName">DMA_IRQ</obj_property>
+      <obj_property name="ObjectShortName">DMA_IRQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/start_single_write" type="logic">
+      <obj_property name="ElementShortName">start_single_write</obj_property>
+      <obj_property name="ObjectShortName">start_single_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/start_single_read" type="logic">
+      <obj_property name="ElementShortName">start_single_read</obj_property>
+      <obj_property name="ObjectShortName">start_single_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/write_state" type="array">
+      <obj_property name="ElementShortName">write_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">write_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/blk_mem_gen_0/ena" type="logic">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/blk_mem_gen_0/addra" type="array">
+      <obj_property name="ElementShortName">addra[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_ARESETN" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_AWADDR" type="array">
+      <obj_property name="ElementShortName">M_AXI_AWADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_AWPROT" type="array">
+      <obj_property name="ElementShortName">M_AXI_AWPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWPROT[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_AWVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_AWREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_WDATA" type="array">
+      <obj_property name="ElementShortName">M_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_WSTRB" type="array">
+      <obj_property name="ElementShortName">M_AXI_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_WVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_WREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_BRESP" type="array">
+      <obj_property name="ElementShortName">M_AXI_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_BVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_BVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_BREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_ARADDR" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_ARPROT" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARPROT[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_ARVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_ARREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_RDATA" type="array">
+      <obj_property name="ElementShortName">M_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_RRESP" type="array">
+      <obj_property name="ElementShortName">M_AXI_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_RVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_RVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dma_sim/Sim/DMA_Read_Design_i/DMA_Read_Control_0/inst/DMA_Read_Control_v1_0_M00_AXI_inst/M_AXI_RREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_RREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RREADY</obj_property>
+   </wvobject>
+</wave_config>
