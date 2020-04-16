@@ -15,7 +15,7 @@ Offset | Name | Description | Type | Access
 0x20 | WEIGHT_SHAPE | Weight Shape | REG | READ_WRITE |
 0x24 | RESULT | Result Address | REG | READ_WRITE |
 0x28 | RESULT_LENGTH | Result Length | REG | READ_WRITE |
-## 补充说明
+## 详细说明
 寄存器配置的是卷积计算的一些参数，都是固定的（除内存外），特征图的形状和权重的形状虽然能够推算出来的，但是和其耗费的计算资源相比，一个32位寄存器所使用的资源是微不足道的。
 
 * COMPUTE_TYPE
@@ -26,4 +26,4 @@ Offset | Name | Description | Type | Access
 
 * PADDING
   
-  这里的PADDING是以特征图的上下左右边界来划分，每个边界有8比特空间，用来表示需要填充的列/行，0则代表不需要填充。
+  这里的PADDING是以特征图的上下左右边界来划分，每个边界占8Bit，用来表示需要填充的列数/行数，0则代表不需要填充。
