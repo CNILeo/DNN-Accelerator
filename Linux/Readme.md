@@ -9,7 +9,7 @@
 # 流程
 1. 搭建好PL端的工程，并输出比特流文件，并导出硬件生成的*.sdk文件夹(File-Export-Export HardWare，选上Include BitStream)，在本文中依此建立后面的Petalinux；
    
-   这里需要说明的是，Vivado 2019.2开始输出的是单独的XSA文件，没有.sdk后缀名的文件夹。sudo dpkg-reconfigure dash
+   这里需要说明的是，Vivado 2019.2开始输出的是单独的XSA文件，没有.sdk后缀名的文件夹。
 2. 执行下列命令，其中/opt/pkg/petalinux/2019.2为自己PetaLinux安装的位置；
    
    source /opt/pkg/petalinux/2019.2/settings.sh

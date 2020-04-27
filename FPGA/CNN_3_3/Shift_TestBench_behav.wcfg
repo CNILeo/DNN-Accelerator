@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Shift_TestBench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Shift_TestBench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="709001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="215"></NameColumnWidth>
+      <ValueColumnWidth column_width="235"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/Shift_TestBench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Shift_TestBench/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Shift_TestBench/TEMP" type="array">
+      <obj_property name="ElementShortName">TEMP[63:0]</obj_property>
+      <obj_property name="ObjectShortName">TEMP[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Shift_TestBench/Shift" type="array">
+      <obj_property name="ElementShortName">Shift[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Shift[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Shift_TestBench/Result" type="array">
+      <obj_property name="ElementShortName">Result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Result[7:0]</obj_property>
+   </wvobject>
+</wave_config>
