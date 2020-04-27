@@ -52,3 +52,8 @@ $Q_3^{(i, k)}$ = Z3 + ${S1S2\over S3}$$\sum_{j=1}^n$($Q_1^{(i, j)}$ - Z1)($Q_2^{
 
 # 下节内容
 将乘加树变成多通道架构，并进行实际上板验证。更新时间应该会在四月底。
+
+# 白皮书
+Xilinx从UltraScale开始，对DSP的INT8进行了优化，可以同时算两组INT8在一片DSP资源上，感兴趣的可以了解下述白皮书，相关的实现和说明就不发布了。
+
+[Embedded Vision with INT8 Optimization on Xilinx Devices](https://www.xilinx.com/support/documentation/white_papers/wp490-embedded-vision-int8.pdf)
