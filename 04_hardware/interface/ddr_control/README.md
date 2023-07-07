@@ -52,10 +52,10 @@ can be written in any order. In the case of Micro DMA, this value cannot exceed
 
 ## 仿真设计
 ### DMA读取设计
-![DMA-Read-Design.png](../../SRC/Block_Design_1.png)
+![DMA-Read-Design.png](../../doc/Block_Design_1.png)
 
 ### DMA写入设计
-![DMA-Write-Design.png](../../SRC/Block_Design_2.png)
+![DMA-Write-Design.png](../../doc/Block_Design_2.png)
 
   注：SS2M_Data_Generator是自己编写的Verilog代码，用于生成数据测试DDR写入，详情请看代码。
 
@@ -68,9 +68,9 @@ can be written in any order. In the case of Micro DMA, this value cannot exceed
 
 ## 仿真结果
 ### DMA读取
-![DMA-Read-Simulation.png](../../SRC/Sim_Result_1.png)
+![DMA-Read-Simulation.png](../../doc/Sim_Result_1.png)
 ### DMA写入
-![DMA-Write-Simulation.png](../../SRC/Sim_Result_2.png)
+![DMA-Write-Simulation.png](../../doc/Sim_Result_2.png)
 
 # 实际上板部分
 本项目中数据交互需要和指令交互一同存在，所以本节不进行实际上板测试，只说一些简单的说明。
