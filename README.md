@@ -14,7 +14,7 @@ The docs have been placed in the [Wiki](https://github.com/CNILeo/DNN-Accelerato
 Issues can be emailed to me or left as Issues in the repository. I will reply to them as promptly as possible.
 
 ## Contributor
-Leo (zhsleo@outlook.com)
+Haisheng Zheng (zhsleo@outlook.com)
 
 ## License
 [MIT License](./LICENSE)
