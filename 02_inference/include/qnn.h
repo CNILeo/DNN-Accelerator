@@ -1,5 +1,5 @@
-#ifndef __CNN_H
-#define __CNN_H
+#ifndef __QNN_H
+#define __QNN_H
 
 #include <iostream>
 #include <vector>
@@ -23,7 +23,6 @@ struct Feature_Info
 	double Scale;
 };
 
-
 struct Conv_Info
 {
 	bool Padding;
@@ -41,24 +40,24 @@ struct Conv_Info
 
 	std::vector<double> Weight_Scale;
 	std::vector<unsigned short> Weight_Zero_Point;
-	
+
 	double Output_Scale;
 	unsigned short Output_Zero_Point;
 };
 
-double* Load_Image(const char* Image_Path);
+double *Load_Image(const char *Image_Path);
 
-unsigned short* Quantize_Image(double* Image_Raw, struct Feature_Info Info);
+unsigned short *quantize_input(double *Image_Raw, struct Feature_Info Info);
 
-unsigned short* Padding(unsigned short *Feature_Temp, Padding_Info Info);
+unsigned short *Padding(unsigned short *Feature_Temp, Padding_Info Info);
 
-unsigned short* CONV_2D(unsigned short* Feature, short* Filter_Temp, 
-			Feature_Info F_Info, Conv_Info C_Info);
+unsigned short *CONV_2D(unsigned short *Feature, short *Filter_Temp,
+						Feature_Info F_Info, Conv_Info C_Info);
 
-//读取数据
-short* READ_DATA(const char* filename, long SIZE);
+// 读取数据
+short *READ_DATA(const char *filename, long SIZE);
 
-//读取数据
-int* READ_INT_DATA(const char* filename, long SIZE);
+// 读取数据
+int *READ_INT_DATA(const char *filename, long SIZE);
 
 #endif
