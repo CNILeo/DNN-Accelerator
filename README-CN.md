@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+简体中文 | [English](./README.md)
+
 ## DNN Accelator
 本项目使用Verilog实现了一些DNN中的常用算子
 
