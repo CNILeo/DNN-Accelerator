@@ -28,7 +28,6 @@ class LeNet(nn.Module):
         self.fc3 = nn.Linear(84, 10)
         self.dequant = DeQuantStub()
 
-    # 定义前向传播过程，输入为x Float32
     # def forward(self, x):
     #     x = self.conv1(x)
     #     x = self.conv2(x)
@@ -39,7 +38,7 @@ class LeNet(nn.Module):
     #     x = self.fc3(x)
     #     return x
 
-    # 定义前向传播过程，输入为x UINT8
+    # for quantization
     def forward(self, x):
         x = self.quant(x)
         x = self.conv1(x)
@@ -52,17 +51,10 @@ class LeNet(nn.Module):
         x = self.dequant(x)
         return x
 
+    # for quantization
     def fuse_model(self):
         #：[Conv，Relu]，[Conv，BatchNorm]，[Conv，BatchNorm，Relu]，[Linear，Relu]
         torch.quantization.fuse_modules(self.conv1, ['0', '1'], inplace=True)
         torch.quantization.fuse_modules(self.conv2, ['0', '1'], inplace=True)
         torch.quantization.fuse_modules(self.fc1, ['0', '1'], inplace=True)
         torch.quantization.fuse_modules(self.fc2, ['0', '1'], inplace=True)
-        # for m in self.modules():
-        #     print (type(m))
-        #     if type(m) == ConvBNReLU:
-        #         torch.quantization.fuse_modules(m, ['0', '1', '2'], inplace=True)
-        #     if type(m) == InvertedResidual:
-        #         for idx in range(len(m.conv)):
-        #             if type(m.conv[idx]) == nn.Conv2d:
-        #                 torch.quantization.fuse_modules(m.conv, [str(idx), str(idx + 1)], inplace=True)

@@ -6,14 +6,11 @@ import argparse
 import torchvision as tv
 import torchvision.transforms as transforms
 
-# print (torch.cuda.is_available())
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-# device = torch.device("cpu")
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--Folder', default='./Model', help='Folder Path To Output The Model') 
-parser.add_argument('--Net', default='./Model/Net.pth', help="Path To Load The Model")
+parser.add_argument('--ckpt_dir', default='./ckpt', help='path to save ckpt') 
+parser.add_argument('--net', default='./ckpt/last.pth', help="path to load ckpt")
 opt = parser.parse_args()
 
 EPOCH = 8
@@ -51,7 +48,6 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=LR, momentum=0.9)
 
 if __name__ == "__main__":
-    print (device)
     for epoch in range(EPOCH):
         sum_loss = 0.0
         for i, data in enumerate(trainloader):
@@ -82,5 +78,5 @@ if __name__ == "__main__":
                 _, predicted = torch.max(outputs.data, 1)
                 total += labels.size(0)
                 correct += (predicted == labels).sum()
-            print('第%d个Epoch的识别准确率为: %f%%' % (epoch + 1, (100 * float(correct) / float(total))))
-    torch.save(net.state_dict(), '%s/net_%03d.pth' % (opt.Folder, epoch + 1))
+            print('Epoch %d: %f%%' % (epoch + 1, (100 * float(correct) / float(total))))
+    torch.save(net.state_dict(), '%s/net_%03d.pth' % (opt.ckpt_dir, epoch + 1))

@@ -12,8 +12,8 @@ import numpy as np
 device = torch.device("cpu")
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--Folder', default='./Model', help='Folder Path To Output The Model')
-parser.add_argument('--Net', default='./Model/Net.pth', help="Path To Load The Model")
+parser.add_argument('--quantized_dir', default='./quantized', help='path to save ckpt') 
+parser.add_argument('--net', default='./ckpt/last.pth', help="path to load ckpt")
 opt = parser.parse_args()
 
 EPOCH = 8
@@ -48,9 +48,9 @@ testloader = torch.utils.data.DataLoader(
 
 net = Model.LeNet().to(device)
 
-Checkpoint = torch.load("./Model/net_008.pth")  # CPU
+ckpt = torch.load(opt.net)  # CPU
 para = net.parameters()
-net.load_state_dict(Checkpoint)
+net.load_state_dict(ckpt)
 
 net.fuse_model()
 
@@ -85,9 +85,9 @@ if __name__ == "__main__":
         if epoch > 3:
             net.apply(torch.nn.intrinsic.qat.freeze_bn_stats)
 
-        # 保存模型
+        # save model
         quantized_model = torch.quantization.convert(net.eval(), inplace=False)
-        torch.jit.save(torch.jit.script(quantized_model), "./Model/Quant_Model_Epoch_%s.pth" % str(epoch + 1))
+        torch.jit.save(torch.jit.script(quantized_model), "{}/quantized_ckpt_epoch_{}".format(opt.quantized_dir, epoch))
 
         with torch.no_grad():
             correct = 0
@@ -99,4 +99,4 @@ if __name__ == "__main__":
                 _, predicted = torch.max(outputs.data, 1)
                 total += labels.size(0)
                 correct += (predicted == labels).sum()
-            print('第%d个Epoch的识别准确率为: %.02f%%' % (epoch + 1, (100 * float(correct) / float(total))))
+            print('Epoch %d: %.02f%%' % (epoch + 1, (100 * float(correct) / float(total))))
