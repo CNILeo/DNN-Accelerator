@@ -1,6 +1,11 @@
+![LOGO](./img/logo.svg)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 English | [简体中文](./README-CN.md)
+
+## DNN Accelator
+This repository utilizes Verilog to implement common operators in deep neural network (DNN).
 
 ## Documentation
 The docs have been placed in the [Wiki section](https://github.com/CNILeo/DNN-Accelerator/wiki). Please read the docs for more information.
